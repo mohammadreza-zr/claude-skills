@@ -1,0 +1,11 @@
+{
+  "name": "mohammadreza-skills",
+  "owner": { "name": "mohammadreza-zr" },
+  "plugins": [
+    {
+      "name": "react-conventions",
+      "source": "./plugins/react-conventions",
+      "description": "Opinionated React + TypeScript architecture and house-style rules"
+    }
+  ]
+}
