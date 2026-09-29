@@ -26,7 +26,7 @@ Opinionated React + TypeScript house style and architecture rules:
 It triggers automatically when Claude writes, reviews or refactors React/TSX code.
 A project's own `AGENTS.md` / `CLAUDE.md` always takes precedence over the skill.
 
-Some rules assume tooling you may not use (for example [graphify](https://github.com/safishamsi/graphify)
+Some rules assume tooling you may not use (for example graphify
 for code lookup); the skill falls back to other indexes when it is absent.
 
 ## License
