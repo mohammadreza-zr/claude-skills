@@ -1,11 +1,18 @@
 {
   "name": "mohammadreza-skills",
-  "owner": { "name": "mohammadreza-zr" },
+  "owner": {
+    "name": "mohammadreza-zr"
+  },
   "plugins": [
     {
       "name": "react-conventions",
       "source": "./plugins/react-conventions",
       "description": "Opinionated React + TypeScript architecture and house-style rules"
+    },
+    {
+      "name": "one-source-of-truth",
+      "source": "./plugins/one-source-of-truth",
+      "description": "One entity, one type, one name end to end: no duplicated types, no mapping layers, no code comments, clean code, and an audit procedure"
     }
   ]
 }

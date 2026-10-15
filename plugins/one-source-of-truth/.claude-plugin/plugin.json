@@ -1,0 +1,8 @@
+{
+  "name": "one-source-of-truth",
+  "version": "1.0.0",
+  "description": "One entity, one type, one name end to end: no duplicated types or logic, no renaming or mapping layers between database, API and UI, no code comments, clean-code rules, and an audit procedure",
+  "author": { "name": "mohammadreza-zr" },
+  "repository": "https://github.com/mohammadreza-zr/claude-skills",
+  "license": "MIT"
+}

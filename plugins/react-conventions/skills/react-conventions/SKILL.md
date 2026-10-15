@@ -47,7 +47,7 @@ user instead of silently picking one.
    don't pick a reading and carry on. Never cover uncertainty with cosmetic
    edits (rewording comments, renaming, reformatting) and report the task as
    done; say what is unclear instead.
-4. **English for everything developers read** (identifiers, comments, docs,
+4. **English for everything developers read** (identifiers, docs,
    tests, commits), whatever language the user writes in. Product copy stays
    in the locale files (`references/data-and-forms.md` → i18n).
 5. **Real data only.** No mocks, stubs, spies, fake timers, MSW or fabricated

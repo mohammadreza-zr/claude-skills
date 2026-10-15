@@ -68,7 +68,7 @@ mixing (`import { type Camera, cameraKeys } from "@core/api"`).
 - Props are an `interface XProps` right above the component; mutually
   exclusive prop sets are a discriminated union on `variant`.
 - `null` means "no value" in state (`siteId: string | null`).
-- A necessary cast carries one comment saying why it's safe.
+- A necessary cast goes through a named helper whose name says why it's safe.
 
 ## Components and hooks
 
@@ -87,33 +87,12 @@ mixing (`import { type Camera, cameraKeys } from "@core/api"`).
 
 ## Comments
 
-The default is no comment. Clear names, small functions and types carry the
-meaning; every extra comment makes the code longer and goes stale. Write one
-only when the code can't say the reason: a non-obvious constraint, a
-workaround, a decision that looks wrong without context. Keep it to a line
-or two.
-
-```ts
-// Without this, opening the calendar with no value commits today: an empty
-// date filter silently became "today" the moment the box was clicked.
-onOpenPickNewDate={false}
-```
-
-Not worth a comment:
-
-```ts
-/** The search screen. */          // ❌ restates the name
-export function SearchScreen() {
-
-// Filter the rows by status       // ❌ restates the next line
-const active = rows.filter(isActive);
-```
-
-- No JSDoc just because something is exported; add one only for a public
-  API contract a caller can't infer from the types.
-- No section banners, change narratives or commented-out code. When editing,
-  delete comments that are stale or redundant.
-- Tool directives (`eslint-disable` with its reason) and license headers stay.
+None. Names, small functions and types carry the meaning; anything they
+can't say goes to `docs/`, a test name or the commit message. Only tool
+directives stay (`eslint-disable` with its reason inside the directive,
+`@ts-expect-error`, `prettier-ignore`, license headers). Delete commented-out
+code, banners, JSDoc and change narratives on sight. The full rule lives in
+the `one-source-of-truth` skill.
 
 ## Pure logic and tests
 

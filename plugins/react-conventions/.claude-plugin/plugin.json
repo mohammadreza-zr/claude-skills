@@ -1,8 +1,10 @@
 {
   "name": "react-conventions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Opinionated React + TypeScript architecture and house-style rules",
-  "author": { "name": "mohammadreza-zr" },
+  "author": {
+    "name": "mohammadreza-zr"
+  },
   "repository": "https://github.com/mohammadreza-zr/claude-skills",
   "license": "MIT"
 }

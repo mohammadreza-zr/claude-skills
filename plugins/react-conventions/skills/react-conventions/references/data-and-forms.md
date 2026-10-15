@@ -91,7 +91,7 @@ open picker). Map column filters to query params in one small pure function.
 
 - Use the generated mutation hooks. On success show a toast from the
   feature's locale and close the dialog; the global handler already reports
-  failures, so a `catch` that only swallows says so in a comment.
+  failures, so a `catch` that only swallows calls a named no-op (`ignoreHandledError`).
 - Guard double submits (`if (isPending) return;`) and cancel in-flight
   mutations when the dialog closes.
 
